@@ -18,5 +18,11 @@ namespace HW_08_Data_transfer
             ComputerShop shop = new ComputerShop();
             shop.ShowDialog();
         }
+
+        private void buttonTextReader_Click(object sender, EventArgs e)
+        {
+            TextReader reader = new TextReader();
+            reader.ShowDialog();
+        }
     }
 }

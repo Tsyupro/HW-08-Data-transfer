@@ -30,6 +30,7 @@
         {
             this.search = new System.Windows.Forms.Button();
             this.ComputerOpen = new System.Windows.Forms.Button();
+            this.buttonTextReader = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // search
@@ -52,11 +53,22 @@
             this.ComputerOpen.UseVisualStyleBackColor = true;
             this.ComputerOpen.Click += new System.EventHandler(this.ComputerOpen_Click);
             // 
+            // buttonTextReader
+            // 
+            this.buttonTextReader.Location = new System.Drawing.Point(227, 188);
+            this.buttonTextReader.Name = "buttonTextReader";
+            this.buttonTextReader.Size = new System.Drawing.Size(252, 39);
+            this.buttonTextReader.TabIndex = 2;
+            this.buttonTextReader.Text = "TextRader";
+            this.buttonTextReader.UseVisualStyleBackColor = true;
+            this.buttonTextReader.Click += new System.EventHandler(this.buttonTextReader_Click);
+            // 
             // StartProgram
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonTextReader);
             this.Controls.Add(this.ComputerOpen);
             this.Controls.Add(this.search);
             this.Name = "StartProgram";
@@ -69,5 +81,6 @@
 
         private Button search;
         private Button ComputerOpen;
+        private Button buttonTextReader;
     }
 }
